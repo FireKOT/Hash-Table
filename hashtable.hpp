@@ -22,6 +22,7 @@ void      hashTableDtor     (HashTable *ht);
 void      hashTableListDtor (HashTable *ht, size_t id);
 void      hashTableInsert   (HashTable *ht, const char *str);
 int       hashTableFind     (HashTable *ht, const char *str);
+void      hashTableDel      (HashTable *ht, const char *str);
 size_t    hashTableGetCllsn (HashTable *ht, size_t id);
 
 int strCmpFast (const char *str1, const char *str2);
