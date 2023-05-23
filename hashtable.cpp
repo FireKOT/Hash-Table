@@ -87,6 +87,25 @@ int hashTableFind (HashTable *ht, const char *str) {
     return false;
 }
 
+void hashTableDel (HashTable *ht, const char *str) {
+
+    RET_ON_VAL(!ht || !str, ERR_INV_ARG, );
+
+    size_t id = ht->hash(str) % ht->size;
+    size_t cur_node_id = ht->table[id].head;
+
+    for (size_t i = 0; i < ht->table[id].size; i++) {
+
+        if (!strcmp(str, ht->table[id].data[cur_node_id].value)) {
+
+            ListPop(&ht->table[id], cur_node_id);
+            return;
+        }
+
+        cur_node_id = ht->table[id].data[cur_node_id].next;
+    }
+}
+
 size_t hashTableGetCllsn (HashTable *ht, size_t id) {
 
     RET_ON_VAL(!ht || id >= ht->size, ERR_INV_ARG, 0);
