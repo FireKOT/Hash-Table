@@ -146,7 +146,10 @@
 
 По результатам работы профайлера было выяснено, что при текущей оптимизации наиболее затратной функцией является **hashCRC32**. 
 
-![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/FirstOptimization.png "Профилирование первой оптимизации")
+|![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/FirstOptimization.png)|
+---
+Профилирование первой оптимизации
+
 
 Поэтому была написана на ассемблере при помощи ассемблерной вставки функция hashCRC32Fast.
 
