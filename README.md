@@ -70,6 +70,9 @@
 * Минимальный размер списка: 0
 * Среднеквадратичное отклонение размеров списков: 53.4
 
+Сравнение hashStrSum с хорошим выбранным размером массива и плохим
+![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashStrSumBadSize.png)
+
 ---
 
 ### 5. hashRotr
