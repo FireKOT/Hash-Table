@@ -77,7 +77,6 @@
 
 ### 5. hashRotr
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotr.png)
-![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotrEnlarged.png)
 
 * Максимальный размер списка: 113
 * Минимальный размер списка: 18
@@ -87,7 +86,6 @@
 
 #### 6. hashRotl
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotl.png)
-![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotlEnlarged.png)
 
 * Максимальный размер списка: 88
 * Минимальный размер списка: 24
@@ -97,7 +95,6 @@
 
 ### 7. hashCRC32
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashCRC32.png)
-![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashCRC32Enlarged.png)
 
 * Максимальный размер списка: 81
 * Минимальный размер списка: 34
@@ -131,7 +128,7 @@
 * Процессор AMD Ryzen 5 5500U 2.1 ГГц
 * Измерения производились с опциями компилятора GCC -O1 и -mavx2
 
-Для нахождения проблеммных мест программы был использован профайлер valgrind. Критерием выбора функции для оптимизации был выбран параметр self - процент времени выполнения программы, потраченный конкретно на эту функцию.
+Для нахождения проблеммных мест программы был использован профайлер callgrind. Критерием выбора функции для оптимизации был выбран параметр self - процент времени выполнения программы, потраченный конкретно на эту функцию.
 
 ### Изначальная версия
 
@@ -149,7 +146,7 @@
 
 По результатам работы профайлера было выяснено, что при текущей оптимизации наиболее затратной функцией является **hashCRC32**. 
 
-|![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/FirstOptimization.png)|
+|![](https://github.com/FireKOT/Hash-Table/blob/main/profile/FirstOptimization.png)|
 :-----------------------------------------------------------------------------------:
 |Профилирование первой оптимизации                                                  |
 
@@ -164,7 +161,7 @@
 
 По результатам следующего профилирования было выяснено, что после последней оптимизации наиболее затратной функцией стала strcmp.
 
-|![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/SecondOptimization.png)|
+|![](https://github.com/FireKOT/Hash-Table/blob/main/profile/SecondOptimization.png)|
 :-----------------------------------------------------------------------------------:
 |Профилирование второй оптимизации                                                  |
 
@@ -178,7 +175,7 @@
 
 После очередного профилирования было выявлено, что новой самой затратной функцией стала hashTableFind.
 
-|![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/ThirdOptimization.png)|
+|![](https://github.com/FireKOT/Hash-Table/blob/main/profile/ThirdOptimization.png)|
 :-----------------------------------------------------------------------------------:
 |Профилирование третьей оптимизации                                                 |
 
