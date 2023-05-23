@@ -159,7 +159,7 @@
 
 Поэтому была написана на ассемблере при помощи ассемблерной вставки функция hashCRC32Fast.
 
-|![](https://github.com/FireKOT/Hash-Table/blob/main/examples/СКС32Fast.png) |
+|![](https://github.com/FireKOT/Hash-Table/blob/main/examples/CRC32Fast.png) |
 :-----------------------------------------------------------------------------------:
 |Реализация CRC32 при помощи ассемблерной вставки ([src/hashfuncs.cpp](https://github.com/FireKOT/Hash-Table/blob/main/src/hashfuncs.cpp))                                               |
 
