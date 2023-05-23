@@ -77,6 +77,7 @@
 
 ### 5. hashRotr
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotr.png)
+![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotrEnlarged.png)
 
 * Максимальный размер списка: 113
 * Минимальный размер списка: 18
@@ -86,6 +87,7 @@
 
 #### 6. hashRotl
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotl.png)
+![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotlEnlarged.png)
 
 * Максимальный размер списка: 88
 * Минимальный размер списка: 24
@@ -95,6 +97,7 @@
 
 ### 7. hashCRC32
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashCRC32.png)
+![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashCRC32Enlarged.png)
 
 * Максимальный размер списка: 81
 * Минимальный размер списка: 34
