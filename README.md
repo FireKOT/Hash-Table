@@ -31,26 +31,39 @@
 Ниже представлены графики распределения 7 представленных хеш-функций.
 
 ---
+
 **1. hashZero**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashZero.png)
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashZeroEnlarged.png)
+
 ---
+
 **2. hashFirstChar**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashFirstChar.png)
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashFirstCharEnlarged.png)
+
 ---
+
 **3. hashStrLen**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashStrLen.png)
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashStrLenEnlarged.png)
+
 ---
+
 **4. hashStrSum**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashStrSum.png)
+
 ---
+
 **5. hashRotr**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotr.png)
+
 ---
+
 **6. hashRotl**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashRotl.png)
+
 ---
+
 **7. hashCRC32**
 ![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashCRC32.png)
