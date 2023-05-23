@@ -181,11 +181,15 @@
 
 После очередного профилирования было выявлено, что новой самой затратной функцией стала hashTableFind.
 
-|![](https://github.com/FireKOT/Hash-Table/blob/main/profile/ThirdOptimization.png)|
+|![](https://github.com/FireKOT/Hash-Table/blob/main/profile/ThirdOptimization.png) |
 :-----------------------------------------------------------------------------------:
 |Профилирование третьей оптимизации                                                 |
 
-Поэтому была написана на ассемблера функция hashTableFindAsm, в которой было оптимизированно обращение к памяти.
+Поэтому была написана на ассемблера функция hashTableFindAsm, в которой было оптимизированно обращение к памяти и заинлайнено сравнение строк.
+
+|![](https://github.com/FireKOT/Hash-Table/blob/main/examples/findSlow.png) |![](https://github.com/FireKOT/Hash-Table/blob/main/examples/findFast.png)
+:-----------------------------------------------------------------------------------:---------------------------------------------------------:
+|Фрагмент ассемблерного кода функции hashTableFind, полученный при помощи сайта [godbolt.org](https://godbolt.org/) | Часть реализации ассемблерной функции  hashTableFindAsm
 
 ### Четвертая оптимизация 
 
