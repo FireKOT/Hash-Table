@@ -159,6 +159,10 @@
 
 Поэтому была написана на ассемблере при помощи ассемблерной вставки функция hashCRC32Fast.
 
+|![](https://github.com/FireKOT/Hash-Table/blob/main/examples/СКС32Fast.png) |
+:-----------------------------------------------------------------------------------:
+|Реализация CRC32 при помощи ассемблерной вставки ([src/hashfuncs.cpp](https://github.com/FireKOT/Hash-Table/blob/main/src/hashfuncs.cpp))                                               |
+
 ### Вторая оптимизация
 
 Версия                 | Среднее время (мс) | Абсолютный прирост (раз) | Относительный прирост (раз)
@@ -166,6 +170,10 @@
 Оптимизированный хеш   | $$656 \pm 5.2$$    | $$3.1 \pm 0.1$$          | $$1.31 \pm 0.02$$
 
 По результатам следующего профилирования было выяснено, что после последней оптимизации наиболее затратной функцией стала strcmp.
+
+|![](https://github.com/FireKOT/Hash-Table/blob/main/examples/cmpFast.png) |
+:-----------------------------------------------------------------------------------:
+|Реализация сравнения строк с помощью интринсиков ([src/hashtable.cpp](https://github.com/FireKOT/Hash-Table/blob/main/src/hashtable.cpp))                                                 |
 
 |![](https://github.com/FireKOT/Hash-Table/blob/main/profile/SecondOptimization.png)|
 :-----------------------------------------------------------------------------------:
@@ -189,7 +197,7 @@
 
 ![](https://github.com/FireKOT/Hash-Table/blob/main/examples/findSlow.png) |![](https://github.com/FireKOT/Hash-Table/blob/main/examples/findFast.png)
 :----------------------------------------------------------------------------------:|:--------------------------------------------------------:
-Фрагмент ассемблерного кода функции hashTableFind, полученный при помощи сайта [godbolt.org](https://godbolt.org/) | Часть реализации ассемблерной функции  hashTableFindAsm
+Фрагмент ассемблерного кода функции hashTableFind ([src/hashtable.cpp](https://github.com/FireKOT/Hash-Table/blob/main/src/hashtable.cpp)) , полученный при помощи сайта [godbolt.org](https://godbolt.org/) | Часть реализации ассемблерной функции  hashTableFindAsm  ([src/hashTableFind.s](https://github.com/FireKOT/Hash-Table/blob/main/src/hashTableFind.s)) 
 
 ### Четвертая оптимизация 
 
