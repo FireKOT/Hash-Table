@@ -143,7 +143,7 @@
 
 По результатам работы профайлера было выяснено, что при текущей оптимизации наиболее затратной функцией является **hashCRC32**. 
 
-![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/FirstOptimization.png)
+![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/FirstOptimization.png "Профилирование первой оптимизации")
 
 Поэтому была написана на ассемблере при помощи ассемблерной вставки функция hashCRC32Fast.
 
@@ -155,7 +155,7 @@
 
 По результатам следующего профилирования было выяснено, что после последней оптимизации наиболее затратной функцией стала strcmp.
 
-![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/SecondOptimization.png)
+![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/SecondOptimization.png "Профилирование второй оптимизации")
 
 Поэтому при помощи интринсик команд была написана функция strCmpFast.
 
@@ -167,7 +167,7 @@
 
 После очередного профилирования было выявлено, что новой самой затратной функцией стала hashTableFind.
 
-![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/ThirdOptimization.png)
+![](https://github.com/FireKOT/Hash-Table/blob/main/profiles/ThirdOptimization.png "Профилирование третьей оптимизации")
 
 Поэтому была написана на ассемблера функция hashTableFindAsm, в которой было оптимизированно обращение к памяти.
 
