@@ -64,7 +64,7 @@
 ---
 
 ### 4. hashStrSum
-![](https://github.com/FireKOT/Hash-Table/blob/main/plots/hashStrSum.png)
+![](https://github.com/FireKOT/Hash-Table/blob/b29e013c3a8d29b4428bbf052a4f7d6d72379049/plots/hashStrSum.png)
 
 * Максимальный размер списка: 230
 * Минимальный размер списка: 0
