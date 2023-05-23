@@ -10,7 +10,7 @@
 
 **Основное свойство хеш-таблицы** - это быстрое добавление, удаление и поиск элементов. Оно достигается при помощи нахождения хеш-функции с равномерным распределением и подбором подходящего размера массива.
 
-![](https://studfile.net/html/24002/364/html_x_zaC_xOiO.9mpx/img-xXKRWK.png)
+![]([https://studfile.net/html/24002/364/html_x_zaC_xOiO.9mpx/img-xXKRWK.png](https://www.jsmount.com/wp-content/uploads/2021/02/hash-table-structure.png))
 
 ## Часть 1. Сравнение хеш-функций
 
